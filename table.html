@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - Table Layout</title>
+    <link rel="stylesheet" href="table-style.css">
+</head>
+<body>
+    <table id="main-table">
+        <tr>
+            <td colspan="3" class="table-item item1">
+                <table>
+                    <tr>
+                        <td id="menu-container">
+                            <nav class="menu">
+                                <a href="index.html">Про нас</a>
+                                <a href="flex.html">Популярні напрямки</a>
+                                <a href="#">Забронювати путівку</a>
+                            </nav>
+                        </td>
+                        <td>
+                            <h2 class="x-block">Your Next Adventure Awaits!</h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr id="main-tr">
+            <td>
+                <table id="page-content">
+                    <tr>
+                        <td>
+                            <table id="left-column">
+                                <tr>
+                                    <table>
+                                        <tr>
+                                            <td class="table-item item2">
+                                                <img src="./imgs/travell.webp" alt="image">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item item5">
+                                                <img src="./imgs/23-cikavih-faktu-pro-kiyiv.jpg" alt="photo">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <td colspan="2" class="table-item item3">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            Nunc ultricies egestas neque volutpat volutpat. Integer dui leo, 
+                                            mattis quis porttitor et, lobortis sed odio. Proin non placerat libero. 
+                                            Proin sagittis mauris maximus erat ultrices semper. Nulla orci ex, cursus sed sem non, 
+                                            pretium faucibus felis. Nullam laoreet egestas condimentum. Aenean ultrices nibh non mi iaculis, 
+                                            eu mattis leo imperdiet. Nam non blandit nulla. 
+                                            Pellentesque ac ex sagittis leo ultricies pellentesque et non mauris.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr id = "page-footer">
+                                    <td class="table-item item6" colspan="3">
+                                        <table>
+                                            <tr>
+                                                <td class="footer-holder">
+                                                    <h3 class="y-block">Stay connected with us!</h3>
+                                                </td>
+                                                <td class="icons footer-holder">
+                                                    <a href="https://www.instagram.com/"><img src="./imgs/Instagram-Logo-PNG-2018.png.webp" alt="instagram"></a>
+                                                    <a href="https://www.telegram.com/"><img src="./imgs/Telegram_logo.svg.webp" alt="telegram"></a>
+                                                    <a href="https://www.facebook.com/"><img src="./imgs/Facebook_iOS_2019_icon_padded.webp" alt="facebook"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td colspan="1" id = "right-column" class="table-item item4">
+                            <ul>
+                                <li>Item One</li>
+                                <li>Item Two</li>
+                                <li>Item Three</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+<script>
+    window.addEventListener('resize', function(){
+        if (window.innerWidth <= 800){
+        window.location.href = 'table-mobile.html';
+    }
+    })
+  </script>
+</html>

@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+#main-table {
+    min-height: 100vh; 
+}
+
+#page-footer {
+    height: 25%;
+    width: 100%;
+}
+
+.table-item {
+    padding: 0;
+    margin: 0;
+}
+
+.item1 {
+    background-color: #b0cfea;
+    height: 25vh;
+    vertical-align: middle;
+}
+
+.menu {
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+    margin: 20px;
+}
+
+.item2 {
+    width: 25%;
+    height: 25vh;
+}
+
+.item3 {
+    width: 100%;
+    height: auto;
+}
+
+.table-item img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.item4 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.item5 {
+    text-align: center;
+    height: 25vh;
+    width: 25%;
+}
+
+.table-item ul {
+    list-style-position: inside;
+    font-size: 20px;
+    margin: 2%;
+}
+
+ul li {
+    line-height: 2;
+}
+
+.item6 {
+    height: auto;
+    background-color: #b0cfea;
+    text-align: center;
+    padding: 20px;
+}
+
+.table-item p{
+    margin: 2%;
+}
+
+.x-block {
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: 261px;
+    text-align: center;
+}
+
+.footer-holder {
+    vertical-align: top;
+    padding: 20px;
+}
+
+.y-block {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.icons {
+    text-align: right;
+}
+
+.icons a {
+    margin-left: 10px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    #main-table{
+        width: 100%;
+    }
+
+    .item1{
+        height: 56px;
+        width: 100vw;
+    }
+
+    .menu{
+        text-align: center;
+    }
+
+    .menu a{
+        font-size: 10px;
+        margin: 2%;
+    }
+
+    #menu-container{
+        width: 500px;
+    }
+
+    .x-block{
+        width: 130px;
+    }
+
+    .item6{
+        padding: 2%;
+    }
+
+    .y-block{
+        font-size: 10px;
+        width: 200px;
+    }
+
+    .icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
